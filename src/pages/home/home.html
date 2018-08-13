@@ -1,0 +1,28 @@
+
+
+<ion-content >
+  <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade">
+    <ion-slide class="slide-background swiper-no-swiping" *ngFor=" let item of backgrounds"
+    [ngStyle]="{'background-image': 'url('+ item +')'}">
+
+
+    </ion-slide>
+  </ion-slides>
+  <div class="form-container">
+    <form padding   >
+      <ion-item>
+        <ion-label style="color: #fff; font-size: 25px ;">Nº : </ion-label>
+        <ion-input  (keyup)="onKeyup($event)" type="number" maxlength="" sinze="4" pattern="([0-9]{3})" style="font-size: 50px;" ></ion-input>
+      </ion-item>
+      <br>
+      <button  ultimos of ultimo ion-button block outline color="light" (click)="buscar()"  class="bt-placa"  >Consultar</button>
+
+      
+      </form>
+      <div class="strike"> 
+        <span>OU </span>
+      </div>
+      <button ultimos of ultimo ion-button block outline color="light" (click)="goOrgcamento()" class="bt-placa">Orçamento</button>
+  </div>
+
+</ion-content>

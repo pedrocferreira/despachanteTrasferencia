@@ -1,0 +1,47 @@
+<!--
+  Generated template for the OrcamentoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Orçamentos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  <ion-card (click)="gotoMoto()">
+    <img src="assets/imgs/orcamentos/motos.jpg" />
+    <div class="card-title">Moto</div>
+  </ion-card>
+
+    <ion-card (click)= "gotoCarro()">
+    <img src="assets/imgs/orcamentos/veiculo.png" />
+    <div class="card-title">Veiculo</div>
+    
+  </ion-card>
+
+  <ion-card (click)="gotoCaminhao()">
+    <img src="assets/imgs/orcamentos/caminhao.jpg" />
+    <div class="card-title">Caminhao</div>
+    
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/orcamentos/onibus.jpg" />
+    <div class="card-title">Onibus</div>
+    
+  </ion-card>
+  <ion-card>
+    <img src="assets/imgs/orcamentos/reboque.jpg" />
+    <div class="card-title">Reboque</div>
+  
+  </ion-card>
+
+</ion-content>
